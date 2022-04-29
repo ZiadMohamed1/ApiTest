@@ -53,7 +53,7 @@ namespace ApiTest
 
                 Console.WriteLine("Colors by name:");
 
-                foreach (var color in colorsfreq)                             // order by name
+                foreach (var color in colorsfreq)                             // order by names
                     Console.WriteLine($"{color.Key} : {color.Value}");
 
                 colorsfreq = colorsfreq.OrderBy(o => o.Value).ToList<KeyValuePair<string, int>>();
